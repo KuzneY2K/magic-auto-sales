@@ -23,12 +23,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./MY UTILS/CSS UTILS/GRADIENT BUTTONS/Hover Gradients Buttons 2 (OVER KILL).css">
     <link rel="stylesheet" href="./MY UTILS/CSS UTILS/CARDS/DASHBOARD CARDS/Gradient Dashboard Cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="m-0 p-0">
     <header class="sticky-top m-0 p-0">
         <nav class="navbar navbar-expand-lg bg-custom m-0 p-0 shadow">
-            <a href="#" class="navbar-brand m-0 p-0 ms-4 py-4 text-white fs-2"><i class="mdi mdi-car-2-plus"></i> MAGIC
+            <a href="#" class="navbar-brand m-0 p-0 ms-4 py-4 text-white fs-2 animate__animated animate__fadeInRight"><i
+                    class="mdi mdi-car-2-plus"></i> MAGIC
                 AUTO
                 SALES</a>
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -36,7 +38,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-md-end m-0 p-0" id="mainNavbar">
-                <ul class="navbar-nav m-0 p-0 me-1">
+                <ul class="navbar-nav m-0 p-0 me-1 ps-5 mb-5 mb-md-0 animate__animated animate__fadeInLeft">
                     <li class="nav-item">
                         <a href="" class="nav-link fs-4 text-white me-3 nav-link-anim"><i class="mdi mdi-garage"></i>
                             Home</a>
@@ -68,11 +70,16 @@
         <section class="row p-0 m-0">
             <div class="col-12 p-0 m-0 banner shadow">
                 <div class="banner-text-container d-flex flex-row justify-content-center">
-                    <h1 class="banner-title text-white px-3">FIND YOUR DREAM RIDE</h1>
-                    <h3 class="banner-subtitle text-white px-3">With our top tier selection of vehicles and world class
+                    <h1 class="banner-title text-white px-3 animate__animated animate__fadeInDownBig">FIND YOUR DREAM
+                        RIDE</h1>
+                    <h3 class="banner-subtitle text-white px-3 animate__animated animate__lightSpeedInLeft">With our
+                        top
+                        tier selection of vehicles and world class
                         financing <br>We'll have you sold before you even walk through the front
                         door.</h3>
-                    <button class="btn btn-grad get-started-btn position-absolute">GET STARTED</button>
+                    <button
+                        class="btn btn-grad get-started-btn position-absolute animate__animated animate__jackInTheBox">GET
+                        STARTED</button>
                 </div>
             </div>
         </section>
@@ -84,7 +91,7 @@
                     <div class="card-block">
                         <h6 class="m-0 p-0 fs-5">Financing Available By</h6>
                         <h2 class="text-right"><i class="f-left"></i><span>16 <i class="mdi mdi-bank"></i></span></h2>
-                        <p class="m-0 p-0 fs-5">Local Banks / No Credit Check</p>
+                        <p class="m-0 p-0 fs-5">Local Banks / Credit Unions</p>
                     </div>
                 </div>
             </div>
@@ -171,6 +178,63 @@
                         <a href="#" class="btn btn-grad">SEE LISTING</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- FORM -->
+        <section class="row p-0 m-0">
+            <div class="col-12 p-0 m-0">
+                <h1 class="product-header text-center mt-4">APPLY FOR FINANCING</h1>
+                <div class="hstack gap-3 d-flex justify-content-center d-flex flex-column flex-md-row mt-4">
+                    <div class="p-2 bg-custom text-white rounded p-3 fin-pills">NO CREDIT CHECK</div>
+                    <div class="p-2 bg-custom text-white rounded p-3 fin-pills">PRESSURE FREE</div>
+                    <div class="p-2 bg-custom text-white rounded p-3 fin-pills">EXPRESS APPROVAL</div>
+                </div>
+            </div>
+            <div class="col-12 p-0 m0 d-flex justify-content-center mt-5">
+                <form class="shadow p-5 mb-5">
+                    <div class="mb-3">
+                        <label for="fullNameInput" class="form-label">Your Full Legal Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            required minlength="4" placeholder="ex: John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required
+                            minlength="4" placeholder="jdoe@johnmail.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Contact Phone Number</label>
+                        <input type="number" class="form-control" id="phoneInput" aria-describedby="emailHelp" required
+                            minlength="4" placeholder="(123) 456-7890">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Employment Status</label>
+                        <select class="form-select" id="inputGroupSelect01" required>
+                            <option selected>Choose...</option>
+                            <option value="1">Full Time Employment</option>
+                            <option value="2">Part Time Employment</option>
+                            <option value="3">Unemployed</option>
+                            <option value="3">Unemployed w/ Benefits</option>
+                            <option value="3">Active Duty or Title 10 Active Guard</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Income Range</label>
+                        <select class="form-select" id="inputGroupSelect01" required>
+                            <option selected>Choose...</option>
+                            <option value="1">$0 - $20,000</option>
+                            <option value="2">$20,000 - $40,000</option>
+                            <option value="3">$40,000 - $60,000</option>
+                            <option value="3">$60,000 - $80,000</option>
+                            <option value="3">$80,000 - $100,000+</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <button type="submit" class="btn btn-grad mt-4">GET PRE-APPROVED TODAY</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

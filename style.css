@@ -58,6 +58,11 @@
     scale: 1.05;
 }
 
+.fin-pills {
+    width: 15rem;
+    text-align: center;
+}
+
 /* MEDIA RULES */
 
 @media (max-width: 768px) {
